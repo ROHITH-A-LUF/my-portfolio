@@ -1,0 +1,163 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.highlight {
+    color: #2ecc71; /* Changed to an "Engine" Green */
+}
+
+.section-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #fdfdfd;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li { margin-left: 25px; }
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #2ecc71; }
+
+/* --- Hero --- */
+header {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fafafa;
+}
+
+header h1 { font-size: 3.5rem; }
+
+header p {
+    font-family: 'Fira Code', monospace;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+    margin-left: 10px;
+}
+
+.btn:hover { background: #2ecc71; color: white; border-color: #2ecc71; }
+
+/* --- Skills --- */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style: none;
+    margin-top: 30px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.skills-list li {
+    padding: 10px;
+    border-left: 2px solid #2ecc71;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+}
+
+/* --- Project Cards --- */
+#projects { background: #f4f4f4; }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tags { margin-top: 15px; }
+
+.tag {
+    font-size: 0.7rem;
+    background: #eee;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 60px 20px;
+}
+
+.contact-links a { color: #2ecc71; text-decoration: none; font-size: 1.2rem; }
+
+.copyright { margin-top: 30px; font-size: 0.8rem; }
